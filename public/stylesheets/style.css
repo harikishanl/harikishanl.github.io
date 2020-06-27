@@ -27,9 +27,71 @@ nav.vertical ul li{ display:block;}/* vertical menu */
 nav.horizontal ul li{ display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*-- end reset --*/
+div{
+    display: block;
+}
+.main-content {
+    margin: 0px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    width: auto;
+    box-sizing: border-box;
+}
+#header-inner {
+    background-position: left;
+    /* background-repeat: no; */
+}
+.description {
+    /* color: f1f1f140; */
+    font-family: 'Times New Roman', cursive;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 38 0 18px;
+    text-shadow: 1px 0 0 #fff;
+    color: #fff;
+}
+.description {
+    margin: .5em 0 10px;
+    padding: 0 2px;
+}
+.navi-menu {
+    /* align-self: auto; */
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-height: 10px;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.2);
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+.nav-menu ul li {
+    display: inline-block;
+    list-style: none outside none;
+    padding: 0;
+    text-align: left;
+    position: relative;
+}
+.nav-menu li a {
+    background: transparent;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 22px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url(https://3.bp.blogspot.com/-mKJJ8ZAha7w/XOG7FBC-_0I/AAAAAAAAbuQ/bm2yBPEMoWA1izZgVxnR4QJVFzRdYb18QCLcBGAs/s1600/background.png)
+    background: url(https://2.bp.blogspot.com/-mQZr-DtQOxw/XR58ijiLJQI/AAAAAAAAcwc/bHi7WF5N2YoYGSHcIMARKW291wHdfwJ4QCLcBGAs/s1600/background2.png)
     no-repeat center transparent;
     background-attachment: fixed; 
  -webkit-background-size:cover;
@@ -37,6 +99,10 @@ body {
  -o-background-size:cover;
  -ms-background-size:cover;
  background-size:cover;
+ overflow-wrap: break-word;
+ word-break: break-word;
+ word-wrap: break-word;
+
 }
 h1 {
     font-size: 1.7em;
@@ -130,6 +196,9 @@ width:auto;
 .top-six{ 
  background:#fff;
 } 
+.top-seven{ 
+ background:#fff;
+}
 .pricing.pricing-two:before { 
     background: #0099e5; 
 }
@@ -145,6 +214,10 @@ width:auto;
 .pricing.pricing-six:before { 
     background: #e0274a; 
 }
+.pricing.pricing-seven:before { 
+    background: #e0274a; 
+}
+
 .pricing:hover:before{
  width: 100%;
 }
@@ -179,6 +252,7 @@ width:auto;
 }
 .pricing-bottom p {
     color: #a731c3;
+    color:#4a35e8;
     margin: 0;
     font-size: 100%;
     line-height: 1.8em;
@@ -242,6 +316,10 @@ width:auto;
  border-color: #00C872;
 }
 .pricing.pricing-six .agileits-buy a{
+ background-color: #e0274a;
+ border-color: #e0274a;
+}
+.pricing.pricing-seven .agileits-buy a{
  background-color: #e0274a;
  border-color: #e0274a;
 }
@@ -344,9 +422,11 @@ only screen and (max-width: 760px),
  td:nth-of-type(2):before { content: "Rate"; }
  td:nth-of-type(3):before { content: "Fees"; }
  td:nth-of-type(4):before { content: "You Receive"; }
+ td:nth-of-type(5):before { content: "Offer"; }
 }
 
 #owl-demo .item {
+    display: block;
     padding: 0;
     margin: 0 0.5em;
     color: #FFF;
@@ -685,8 +765,9 @@ form ul {
  padding: 1em 0 2em;
 }
 .copyright p {
- color: #fff;
+ color: #792ffd;
  font-size:1em;
+ font-weight:900;
  line-height:1.8em;
 }
 .copyright p a{
@@ -907,7 +988,6 @@ h1 {
 }
 }
 /*-- //responsive-design --*/
-
 /* 
  *  Core Owl Carousel CSS File
  * v1.3.3
@@ -1115,7 +1195,7 @@ box-sizing: border-box;
 }
 @media screen and (min-width:1152px){
   .side-panel{
-      justify-content: space-between;
+      /* justify-content: space-between; */
   }
 
   .top-input{
